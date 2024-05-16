@@ -16,7 +16,7 @@ function Work() {
       <div className="cards-container">
         <div className="work-card">
             <h2 id='step'>Step 1: Enroll your favorite course for only ₹1,499</h2>
-            <img src="src/assets/enroll.jpg" alt="" />
+            <img src="/enroll.jpg" alt="" />
             <h2>Start learning with Lifetime Course Access.</h2>
         </div>
         <div className="work-card">
