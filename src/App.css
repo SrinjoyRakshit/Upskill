@@ -1,0 +1,1769 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  color: black;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-color: #fff;
+  position: relative;
+  overflow-x: hidden;
+}
+.navbar{
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 10vh;
+  padding: 3vw 6vw;
+}
+.navbar .logo{
+  font-size: 3vw;
+  font-weight: 500;
+  color: black;
+}
+.navbar .nav-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1.5vw;
+}
+.nav-button h3{
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: blueviolet;
+  margin-top: 0.5vw;
+  font-weight: 500;
+}
+.nav-button button{
+  background: linear-gradient(180deg, #B73BBE 0%, #992E9D 93.51%);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  padding: 1vw 3vw;
+}
+.menubar{
+  position: absolute;
+  top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5rem;
+  height: 3vw;
+  width: 100%;
+  background-color: rgb(34, 33, 33);
+}
+.menubar h3{
+  color: rgb(180, 179, 179);
+  font-weight: normal;
+  font-size: 1.5vw;
+}
+.hero-section{
+  position: absolute;
+  top: 5vw;
+  width: 100%;
+}
+.hero-section .hero-iit{
+  display: flex;
+  gap: 1rem;
+  padding: 1vw;
+  border: 1px solid goldenrod;
+  width: 27vw;
+  margin-top: 10vw;
+  margin-left: 5vw;
+  border-radius: 17px;
+}
+.hero-iit h3{
+  font-size: 1.5vw;
+  font-weight: 500;
+  color: #595961;
+}
+.hero-iit span{
+  font-weight: 700;
+}
+.hero-section .hero-desc{
+  margin-top: 2vw;
+  width: 100%;
+  margin-left: 5vw;
+}
+.hero-desc h1{
+  font-size: 4vw;
+  font-weight: 900;
+  color: #992E9D;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+.hero-desc span{
+  color: rgb(34, 34, 34);
+}
+.hero-desc p{
+  font-size: 1.3vw;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+.hero-section .hero-point{
+  margin-top: 2vw;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.8rem;
+  width: 100%;
+  margin-left: 5vw;
+}
+.hero-point button{
+  border: none;
+  outline: none;
+  display: flex;
+  background-color: #FFFCEA;
+  border-radius: 20px;
+  gap: 1rem;
+  padding: 1.1vw;
+  border-color: #FFF4C5;
+}
+.hero-point button h4{
+  color: rgb(109, 45, 45);
+  font-size: 1.2vw;
+}
+.hero-point button i{
+  color: rgb(138, 7, 7);
+}
+.hero-btn{
+  display: flex;
+  background-color: white;
+  gap: 2rem;
+  margin-top: 0.5vw;
+  padding-bottom: 3.5vw;
+  padding-left: 5vw;
+  width: 100%;
+}
+.hero-btn .enroll{
+  display: flex;
+  border-radius: 20px;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #B73BBE 0%, #992E9D 93.51%);
+  padding: 1.5vw;
+  margin-top: 3vw;
+}
+.enroll h4{
+  font-size: 1.2rem;
+  color: white;
+}
+.enroll i{
+  color: white;
+}
+.hero-btn .know{
+  background-color: #fff;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.2vw;
+  margin-top: 3vw;
+}
+.know h3, i{
+  color: #992E9D;
+  font-size: 2vw;
+}
+.itemcards{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  background-color: rgb(231, 243, 247);
+  top: 53vw;
+  margin-top: 5vw;
+  width: 100%;
+  padding: 1.5vw;
+  padding-bottom: 2vw;
+}
+.itemcards .card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 25%;
+  border-right-color: rgb(27, 52, 71);
+}
+.itemcards .card img{
+  background-color: transparent;
+  height: 30%;
+  width: 30%;
+}
+.card .card-desc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+}
+.itemcards .card h2{
+  text-align: center;
+  font-size: 3.1vw;
+  color: #992E9D;
+}
+.itemcards .card h3{
+  text-align: center;
+  font-size: 1.3vw;
+  color: #686972;
+}
+.course{
+  position: absolute;
+  top: 67vw;
+  background-color: #fff;
+  width: 100%;
+}
+.course .course-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vw;
+  background-color: #FCF5FE;
+}
+.course-details button{
+  background-color: #F9EBFC;
+  border: 1px solid #F4D6F8;
+  outline: none;
+  border-radius: 20px;
+  color: rgb(45, 64, 153);
+  font-size: 1.3vw;
+  margin-top: 8vw;
+}
+.course-details h2{
+  font-size: 2.8vw;
+  font-weight: 800;
+  margin-top: 3vw;
+  color: rgba(46, 47, 49, 1);
+}
+.course-details h2 span{
+  color: #cb534b; 
+  background-image: -webkit-linear-gradient(0deg, #cb534b 35%, #a314c3 89%, #6ec269 44%); 
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;             
+}
+.course .course-container{
+  background-color: #FCF5FE;
+  padding: 4vw;
+  padding-bottom: 6vw;
+}
+.course .course-box{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(237, 243, 243);
+  border-radius: 14px;
+  background-color: #fff;
+}
+.course-box .course-cards{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vw 3vw;
+  border-bottom: 1px solid rgb(225, 230, 230);
+}
+.course-cards .left h2{
+  font-weight: 700;
+  font-size: 2.2vw;
+}
+.course-cards .left p{
+  font-weight: 400;
+  font-size: 1.3vw;
+}
+.course-cards .right{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.course-cards .right i{
+  margin-right: 1rem;
+}
+.course-cards .right button{
+  background-color: #FCF5FE;
+  border-radius: 1000px;
+  border-color: #F9EBFC;
+}
+.sale{
+  position: absolute;
+  top: 138vw;
+  background-color: #fff;
+  width: 100%;
+}
+.sale .sale-desc{
+  text-align: center;
+}
+.sale-desc h1{
+  margin-top: 10vw;
+  font-size: 4vw;
+  font-weight: 800;
+  color: rgb(54, 53, 53);
+}
+.sale-desc h1 span{
+  color: rgb(101, 71, 129);
+}
+.sale-box{
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  width: 35vw;
+  background: linear-gradient(180deg, #9849FF 0%, #841EE3 93.51%);
+  padding: 20px 25px;
+  margin-left: 30vw;
+  border-radius: 27px;
+  border: none;
+  outline: none;
+}
+.sale-box h2{
+  font-size: 2vw;
+  color: whitesmoke;
+  text-align: center;
+}
+.sale-box h4{
+  margin-top: 1.3vw;
+  font-size: 1.2vw;
+  color: #e4dcdc;
+}
+.sale-box input{
+  width: 100%;
+  accent-color: yellow;
+}
+.offer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5vw;
+}
+.offer i, h3{
+  color: white;
+  font-size: 1.3vw;
+}
+.work-section{
+  position: absolute;
+  top: 180vw;
+  background-color: #fff;
+  width: 100%;
+}
+.work-section h1{
+  text-align: center;
+  margin-top: 2vw;
+  font-size: 3vw;
+  font-weight: 800;
+}
+.work-section hr{
+  margin: 3vw 18vw;
+  position: relative;
+  border: 2px solid rgb(215, 224, 224);
+}
+.work-section .bar{
+  position: absolute;
+  top: 8.3vw;
+  left: 10vw;
+  width: 4%;
+  height: 3px;
+  background-color: rgb(112, 38, 38);
+  animation: movebar 2s linear infinite;
+}
+@keyframes movebar {
+  0%{
+    left: 15%;
+  }
+  100%{
+    left: 80%;
+  }
+}
+.steps{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10rem;
+  width: 100%;
+  margin-bottom: 10vw;
+  position: absolute;
+  top: 5.6vw;
+}
+.steps .one{
+  padding: 28px;
+  background-color: #992E9D;
+  color: white;
+  clip-path: polygon(66% 20%, 90% 49%, 65% 84%, 0 84%, 19% 53%, 0 20%);
+}
+.cards-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 9vw 4vw;
+  gap: 3rem;
+}
+.cards-container .work-card{
+  width: 33.33%;
+  height: 40vh;
+  border: 1px solid #F9EBFC;
+  padding: 1vw;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #FCF5FE 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.work-card h2{
+  text-align: left;
+  font-size: 1.3vw;
+  color: black;
+  font-weight: 500;
+}
+.work-card img{
+  height: 35%;
+  width: 35%;
+  object-fit: cover;
+  margin: 1vw 8vw;
+}
+.work-card .number{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5px 10px;
+  border: 1px solid rgb(175, 211, 211);
+  padding: 0 1.5vw;
+  border-radius: 10px;
+}
+.number h3{
+  color: black;
+  font-size: 1.2vw;
+  text-align: left;
+  margin-left: 0.7vw;
+}
+.number h1{
+  margin-bottom: 2vw;
+  color: goldenrod;
+  font-size: 3vw;
+}
+#step{
+  color: rgb(41, 94, 163);
+  font-weight: 700;
+}
+.company{
+  position: absolute;
+  top: 224vw;
+  background-color: #fffcea;
+  width: 100%;
+}
+.company .company-container{
+  margin-top: 5vw;
+}
+.company-container h1{
+  text-align: center;
+  font-size: 3vw;
+  font-weight: 800;
+}
+.company-container span{
+  color: #cb534b; 
+  background-image: -webkit-linear-gradient(0deg, #cb534b 35%, #a314c3 89%, #6ec269 44%); 
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+}
+.logos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  padding: 2vw;
+}
+.logos .lugo{
+  padding: 35px;
+  width: 20%;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 2vw;
+  color: #374957;
+  background-color: #ffffff;
+}
+.certificate{
+  position: absolute;
+  top: 250vw;
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 5vw;
+}
+.certificate-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-top: 3vw;
+  margin-bottom: 10vw;
+  padding: 0 3vw;
+}
+.certificate h1{
+  text-align: center;
+  margin-top: 15vw;
+  color: #686972;
+  font-size: 3.7vw;
+}
+.certificate h1 span{
+  color: #992E9D;
+}
+.certificate-container .cer-one{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 80vh;
+  margin-top: 3vw;
+  border: 1px solid #F9EBFC;
+  border-radius: 32px;
+  background-color: #FCF5FE;
+}
+.cer-one h2{
+  text-align: center;
+  font-size: 2.5vw;
+}
+.cer-one img{
+  height: 70%;
+  width: 70%;
+  object-fit: cover;
+  margin-top: -3vw;
+}
+.cer-btn {
+  display: flex;
+  gap: 10px;
+}
+.cer-one .cer-btn button{
+  background-color: #F9EBFC;
+  border: #F4D6F8;
+  border-radius: 100px;
+}
+.certificate-container .cer-two{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 80vh;
+  margin-top: 3vw;
+  border: 1px solid #FFF4C5;
+  border-radius: 32px;
+  background-color: #FFFCEA;
+}
+.cer-two h2{
+  text-align: center;
+  font-size: 2.5vw;
+  margin-top: 0.2vw;
+}
+.cer-two p{
+  text-align: left;
+  padding: 0 2vw;
+  font-size: 1.5vw;
+}
+.cer-two img{
+  height: 70%;
+  width: 70%;
+  object-fit: cover;
+}
+.bundle{
+  position: absolute;
+  top: 320vw;
+  background-color: #fff;
+  width: 100%;
+  padding: 5vw;
+}
+.bundle .top-bundle{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #bc9dee;
+  box-shadow: 0px 20px 250px -20px #9747FF26;
+  padding: 7vw 2vw;
+  border-radius: 48px;
+  margin-bottom: 10vw;
+}
+.top-bundle .bundle-left{
+  text-align: left;
+}
+.bundle-left h1{
+  font-size: 4vw;
+  font-weight: 800;
+  color: #1B1B1D;
+}
+.bundle-left h1 span{
+  text-decoration: line-through;
+  font-size: 3vw;
+  color: #7a231d;
+  font-weight: 600;
+}
+.bundle-left p{
+  font-size: 1.4vw;
+  margin-top: 1vw;
+}
+.bundle-left button{
+  background-color: #1B1B1D;
+  padding: 24px 48px 24px 40px;
+  margin-top: 3vw;
+  font-size: 24px;
+  color: white;
+  gap: 2rem;
+  display: flex;
+  border: none;
+  outline: none;
+}
+.bundle-left i{
+  font-size: 24px;
+  color: white;
+}
+.bundle-right{
+  text-align: left;
+  margin-top: -4vw;
+  gap: 3rem;
+}
+.bundle-right h2{
+  font-size: 2vw;
+  font-weight: 500;
+}
+.bundle-right h3{
+  font-size: 2vw;
+  color: black;
+}
+.bottom-bundle{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(180deg, #B73BBE 0%, #992E9D 93.51%);
+  box-shadow: 0px 20px 250px -20px #9747FF26;
+  padding: 7vw 2vw;
+  border-radius: 48px;
+  margin-bottom: 10vw;
+}
+.bundle-left-two{
+  text-align: left;
+}
+.bundle-left-two h1{
+  font-size: 4vw;
+  font-weight: 800;
+  color: #fff;
+}
+.bundle-left-two h1 span{
+  text-decoration: line-through;
+  font-size: 3vw;
+  color: #52acf7;
+  font-weight: 600;
+}
+.bundle-left-two p{
+  font-size: 1.4vw;
+  margin-top: 1vw;
+  color: white;
+}
+.bundle-left-two button{
+  background-color: #1B1B1D;
+  padding: 24px 48px 24px 40px;
+  margin-top: 3vw;
+  font-size: 24px;
+  color: white;
+  gap: 2rem;
+  display: flex;
+  border: none;
+  outline: none;
+}
+.bundle-left-two i{
+  font-size: 24px;
+  color: white;
+}
+.bundle-right-two{
+  text-align: left;
+  margin-top: -4vw;
+  gap: 3rem;
+}
+.bundle-right-two h2{
+  font-size: 2vw;
+  font-weight: 500;
+  color: white;
+}
+.bundle-right-two h3{
+  font-size: 2vw;
+  color: white;
+}
+
+@media screen and (max-width:1080px) {
+  .navbar .logo{
+    text-align: center;
+  }
+  .hero-section .hero-iit{
+    display: flex;
+    gap: 1rem;
+    padding: 1vw;
+    width: 30vw;
+    margin-top: 10vw;
+    margin-left: 5vw;
+  }
+  .know{
+    font-size: 1.2vw;
+  }
+  .itemcards{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    top: 60vw;
+    width: 100%;
+    margin-top: -0.1vw;
+  }
+  .itemcards .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 25%;
+    margin-bottom: 2vw;
+  }
+  .hero-section{
+    position: absolute;
+    top: 5vw;
+    width: 100%;
+  }
+  .hero-btn{
+    display: flex;
+    gap: 2rem;
+    margin-top: 2.5vw;
+    margin-bottom: 7vw;
+    padding-left: 5vw;
+    width: 100%;
+  }
+  .course{
+    position: absolute;
+    top: 68vw;
+    width: 100%;
+  }
+  .steps{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10rem;
+    width: 100%;
+    margin-bottom: 10vw;
+    position: absolute;
+    top: 51px;
+  }
+  .work-section{
+    top: 178vw;
+  }
+  .work-section .bar{
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 4%;
+    height: 3px;
+  }
+  .bundle{
+    position: absolute;
+    top: 320vw;
+    width: 100%;
+    padding: 5vw;
+  }
+  .sale{
+    top: 135vw;
+  }
+}
+@media screen and (max-width:854px) {
+  .hero-section .hero-iit{
+    display: flex;
+    gap: 1rem;
+    padding: 1vw;
+    width: 30vw;
+    margin-top: 15vw;
+    margin-left: 5vw;
+  }
+  .itemcards{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    top: 65vw;
+    width: 100%;
+    margin-top: -0.1vw;
+  }
+  .course{
+    position: absolute;
+    top: 73vw;
+  }
+  .sale{
+    position: absolute;
+    top: 137vw;
+  }
+  .work-section{
+    position: absolute;
+    top: 187vw;
+    background-color: #fff;
+    width: 100%;
+  }
+  .steps{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 7rem;
+    width: 100%;
+    margin-bottom: 10vw;
+    position: absolute;
+    top: 40px;
+  }
+  .work-section .bar{
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    width: 4%;
+    height: 3px;
+  }
+  .work-section h1{
+    text-align: center;
+    margin-top: 3vw;
+    font-size: 3vw;
+    font-weight: 800;
+  }
+  .work-card img{
+    height: 35%;
+    width: 55%;
+    object-fit: cover;
+  }
+  .company{
+    position: absolute;
+    top: 240vw;
+    background-color: #fffcea;
+    width: 100%;
+  }
+  .certificate{
+    position: absolute;
+    top: 268vw;
+    background-color: #fff;
+    width: 100%;
+    margin-bottom: 5vw;
+  }
+  .bundle{
+    position: absolute;
+    top: 358vw;
+    background-color: #fff;
+    width: 100%;
+    padding: 5vw;
+  }
+  .cer-one .cer-btn button{
+    padding: 1vw;
+  }
+  .cer-two p{
+    text-align: left;
+    padding: 0 2vw;
+    font-size: 1.5vw;
+  }
+}
+@media screen and (max-width:830px) {
+  .certificate-container .cer-one{
+    width: 50%;
+    height: 65vh;
+    margin-top: 3vw;
+  }
+  .certificate-container .cer-two{
+    width: 50%;
+    height: 65vh;
+  }
+}
+@media screen and (max-width:765px) {
+
+
+  .menubar{
+    height: 5vw;
+  }
+  .logo{
+    font-size: 5vw;
+  }
+  .hero-section{
+    position: absolute;
+    top: 7vw;
+    width: 100%;
+  }
+  .hero-point i{
+    display: none;
+  }
+  .itemcards{
+    gap: 5rem;
+    top: 70vw;
+    width: 100%;
+    margin-top: -0.1vw;
+  }
+  .hero-btn .know{
+    font-size: 2vw;
+  }
+  .hero-point button{
+    border: none;
+    outline: none;
+    display: flex;
+    background-color: #FFFCEA;
+    border-radius: 20px;
+    gap: 0.5rem;
+    padding: 1vw;
+    border-color: #FFF4C5;
+  }
+  .know h3, i{
+    color: #992E9D;
+    font-size: 2vw;
+  }
+  .hero-desc p{
+    font-size: 1.7vw;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+  .course{
+    position: absolute;
+    top: 80vw;
+  }
+  .sale{
+    position: absolute;
+    top: 152vw;
+  }
+  .work-section{
+    position: absolute;
+    top: 198vw;
+    background-color: #fff;
+    width: 100%;
+  }
+  .work-section h1{
+    text-align: center;
+    margin-top: 2vw;
+    font-size: 3.3vw;
+    font-weight: 800;
+  }
+  .work-section hr{
+    margin-top: 6vw;
+  }
+  .steps{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 7rem;
+    width: 100%;
+    margin-bottom: 10vw;
+    position: absolute;
+    top: 51px;
+  }
+  .work-section .bar{
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 4%;
+    height: 3px;
+  }
+  .work-card img{
+    height: 35%;
+    width: 55%;
+    object-fit: cover;
+  }
+  .company{
+    position: absolute;
+    top: 260vw;
+    background-color: #fffcea;
+    width: 100%;
+  }
+  .certificate{
+    position: absolute;
+    top: 290vw;
+    background-color: #fff;
+    width: 100%;
+    margin-bottom: 5vw;
+  }
+  .certificate-container .cer-one{
+    width: 50%;
+    height: 65vh;
+    margin-top: 3vw;
+  }
+  .certificate-container .cer-two{
+    width: 50%;
+    height: 65vh;
+  }
+  .cer-one .cer-btn button{
+    padding: 1vw;
+    width: 20vw;
+    font-size: 1.5vw;
+  }
+  .bundle{
+    position: absolute;
+    top: 370vw;
+    background-color: #fff;
+    width: 100%;
+    padding: 5vw;
+  }
+}
+@media screen and (max-width:697px) {
+  .navbar .logo{
+    font-size: 3vw;
+    font-weight: 500;
+    color: black;
+    margin-top: 3vw;
+  }
+  .navbar .nav-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 3vw;
+    gap: 2vw;
+  }
+  .nav-button h3{
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: blueviolet;
+    margin-top: 0.5vw;
+    font-weight: 500;
+  }
+  .menubar{
+    height: 5vw;
+  }
+  .course-cards .left p{
+    font-weight: 400;
+    font-size: 1.7vw;
+  }
+  .sale{
+    position: absolute;
+    top: 158vw;
+  }
+  .work-section{
+    position: absolute;
+    top: 205vw;
+    background-color: #fff;
+    width: 100%;
+  }
+  .work-section hr{
+    margin-top: 8.8vw;
+  }
+  .steps{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 6rem;
+    width: 100%;
+    margin-bottom: 10vw;
+    position: absolute;
+    top: 51px;
+  }
+  .work-section .bar{
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 4%;
+    height: 3px;
+  }
+  .company{
+    position: absolute;
+    top: 259vw;
+    background-color: #fffcea;
+    width: 100%;
+  }
+  .work-section .bar{
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    width: 4%;
+    height: 3px;
+  }
+  .certificate{
+    position: absolute;
+    top: 287vw;
+    background-color: #fff;
+    width: 100%;
+    margin-bottom: 5vw;
+  }
+  .cer-one .cer-btn button{
+    padding: 1vw;
+    width: 20vw;
+    font-size: 1.5vw;
+  }
+  .bundle{
+    position: absolute;
+    top: 385vw;
+    background-color: #fff;
+    width: 100%;
+    padding: 5vw;
+  }
+  .cards-container .work-card{
+    width: 33.33%;
+    height: 35vh;
+    padding: 1vw;
+  }
+  .work-card img{
+    height: 35%;
+    width: 55%;
+    object-fit: cover;
+  }
+  .logos .lugo{
+    padding: 25px;
+  }
+  .work-section hr{
+    margin-top: 7vw;
+  }
+  .sale{
+    position: absolute;
+    top: 152vw;
+  }
+  .work-section{
+    position: absolute;
+    top: 198vw;
+    background-color: #fff;
+    width: 100%;
+  }
+  .certificate-container .cer-one{
+    width: 50%;
+    height: 65vh;
+    margin-top: 3vw;
+  }
+  .cer-one h2{
+    text-align: center;
+    font-size: 2.7vw;
+  }
+  .certificate-container .cer-two{
+    width: 50%;
+    height: 65vh;
+  }
+  .bundle{
+    position: absolute;
+    top: 370vw;
+  }
+  .bundle .top-bundle{
+    padding: 7vw 2vw;
+  }
+  .top-bundle .bundle-left{
+    text-align: left;
+  }
+  .bundle-left h1{
+    font-size: 4vw;
+  }
+  .bundle-left h1 span{
+    text-decoration: line-through;
+    font-size: 3vw;
+  }
+  .bundle-left p{
+    font-size: 1.8vw;
+    margin-top: 1vw;
+  }
+  .bundle-left button{
+    background-color: #1B1B1D;
+    padding: 2vw;
+  }
+  .bundle-left i{
+    font-size: 24px;
+    color: white;
+  }
+  .bundle-right{
+    text-align: left;
+    margin-top: -4vw;
+    gap: 3rem;
+  }
+  .bundle-right h2{
+    font-size: 2.1vw;
+    font-weight: 500;
+  }
+  .bundle-right h3{
+    font-size: 2.1vw;
+    color: black;
+  }
+  .bottom-bundle{
+    padding: 7vw 2vw;
+  }
+  .bundle-left-two{
+    text-align: left;
+  }
+  .bundle-left-two h1{
+    font-size: 4vw;
+    font-weight: 800;
+    color: #fff;
+  }
+  .bundle-left-two h1 span{
+    text-decoration: line-through;
+    font-size: 3vw;
+    color: #52acf7;
+    font-weight: 600;
+  }
+  .bundle-left-two p{
+    font-size: 1.8vw;
+    margin-top: 1vw;
+    color: white;
+  }
+  .bundle-left-two button{
+    background-color: #1B1B1D;
+    padding: 2vw;
+  }
+  .bundle-left-two i{
+    font-size: 24px;
+    color: white;
+  }
+  .bundle-right-two{
+    text-align: left;
+    margin-top: -4vw;
+    gap: 3rem;
+  }
+  .bundle-right-two h2{
+    font-size: 2.1vw;
+    font-weight: 500;
+    color: white;
+  }
+  .bundle-right-two h3{
+    font-size: 2.1vw;
+    color: white;
+  }
+}
+@media screen and (max-width:570px) {
+  .navbar .logo{
+    font-size: 3vw;
+    font-weight: 500;
+    color: black;
+    margin-top: 3vw;
+  }
+  .navbar .nav-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 3vw;
+    gap: 2vw;
+  }
+  .nav-button h3{
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: blueviolet;
+    margin-top: 0.5vw;
+    font-weight: 500;
+  }
+  .sale-box{
+    width: 50vw;
+    padding: 20px 25px;
+    margin-left: 23vw;
+  }
+  .sale-box h2{
+    font-size: 3vw;
+    color: whitesmoke;
+    text-align: center;
+  }
+  .sale-box h4{
+    margin-top: 1.3vw;
+    font-size: 2vw;
+  }
+  .offer i, h3{
+    color: white;
+    font-size: 3vw;
+  }
+  .sale{
+    position: absolute;
+    top: 159vw;
+  }
+  .work-section{
+    position: absolute;
+    top: 213vw;
+    background-color: #fff;
+    width: 100%;
+  }
+  .work-section hr{
+    margin-top: 10.2vw;
+  }
+  .bar{
+    top: 98px;
+  }
+  .company{
+    position: absolute;
+    top: 278vw;
+    background-color: #fffcea;
+    width: 100%;
+  }
+  .certificate{
+    position: absolute;
+    top: 306vw;
+    width: 100%;
+    margin-bottom: 5vw;
+  }
+  .bundle{
+    position: absolute;
+    top: 400vw;
+    width: 100%;
+    padding: 5vw;
+  }
+  .enroll h4{
+    font-size: 2vw;
+    color: white;
+  }
+}
+@media screen and (max-width:490px) {
+  .navbar .logo{
+    font-size: 3vw;
+    font-weight: 500;
+    color: black;
+    margin-top: -3vw;
+  }
+  .navbar .nav-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: -5vw;
+    gap: 2vw;
+  }
+  .nav-button h3{
+    font-size: 1rem;
+    cursor: pointer;
+    color: blueviolet;
+    margin-top: 0.5vw;
+    font-weight: 500;
+  }
+  .menubar{
+    top: 4rem;
+    gap: 3.5rem;
+    height: 6vw;
+  }
+  .menubar h3{
+    font-size: 1.9vw;
+  }
+  .hero-section{
+    top: 10vw;
+    width: 100%;
+  }
+  .hero-section .hero-iit{
+    gap: 1rem;
+    padding: 3vw;
+    width: 70%;
+    margin-top: 13vw;
+    margin-left: 8vw;
+  }
+  .hero-iit h3{
+    font-size: 2.5vw;
+  }
+  .hero-iit i{
+    font-size: 3vw;
+  }
+  .hero-section .hero-desc{
+    margin-top: 3vw;
+    width: 100%;
+    margin-left: 7vw;
+  }
+  .hero-desc h1{
+    font-size: 6vw;
+  }
+  .hero-desc p{
+    font-size: 2.5vw;
+  }
+  .hero-section .hero-point{
+    margin-top: 2.5vw;
+    gap: 0.8rem;
+    width: 100%;
+    margin-left: 3vw;
+  }
+  .hero-point button{
+    gap: 1rem;
+    padding: 2vw;
+  }
+  .hero-point button h4{
+    font-size: 1.7vw;
+  }
+  .hero-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 0.5vw;
+    padding-bottom: 3.5vw;
+    padding-left: 5vw;
+    width: 100%;
+  }
+  .enroll{
+    width: 80%;
+    border-radius: 3px;
+    margin-left: 5vw;
+  }
+  .enroll h4{
+    font-size: 2.5vw;
+  }
+  .know h3, i{
+    font-size: 2.7vw;
+  }
+  .itemcards{
+    display: none;
+  }
+  .course{
+    position: absolute;
+    top: 100vw;
+    width: 100%;
+  }
+  .course-details button{
+    border-radius: 20px;
+    font-size: 2vw;
+    margin-top: 8vw;
+    padding: 2vw 4vw;
+  }
+  .course-details h2{
+    font-size: 5vw;
+  }
+  .course .course-container{
+    background-color: #FCF5FE;
+    padding: 4vw;
+    padding-bottom: 6vw;
+  }
+  .course .course-box{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(237, 243, 243);
+    border-radius: 14px;
+    background-color: #fff;
+  }
+  .course-box .course-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 2vw 4vw;
+  }
+  .course-cards .left h2{
+    font-size: 2.8vw;
+  }
+  .course-cards .left p{
+    font-size: 2.5vw;
+  }
+  .course-cards .right button{
+    border-radius: 10px;
+    padding: 2vw 10vw;
+  }
+  .sale{
+    top: 242vw;
+  }
+  .sale .sale-desc{
+    text-align: center;
+  }
+  .sale-desc h1{
+    margin-top: 10vw;
+    font-size: 5vw;
+  }
+  .sale-box{
+    width: 70%;
+    padding: 25px 35px;
+    margin-left: 15vw;
+  }
+  .sale-box h2{
+    font-size: 3.5vw;
+  }
+  .sale-box h4{
+    margin-top: 4vw;
+    font-size: 2.5vw;
+  }
+  .offer i, h3{
+    color: white;
+    font-size: 2vw;
+  }
+  .work-section{
+    top: 305vw;
+  }
+  .work-section h1{
+    margin-top: 3vw;
+    font-size: 5vw;
+  }
+  .work-section hr{
+    margin-top: 10vw;
+    margin-left: -55vw;
+    position: relative;
+    transform: rotate(90deg);
+    width: 80%;
+}
+  .work-section .bar{
+    display: none;
+}
+  .steps{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 3vw;
+    margin-top: 20vw;
+    gap: 15rem;
+    width: 100%;
+    margin-bottom: 10vw;
+    position: absolute;
+    top: 5.6vw;
+  }
+  .steps .one{
+    padding: 28px;
+    background-color: #992E9D;
+    color: white;
+    clip-path: polygon(66% 20%, 90% 49%, 65% 84%, 0 84%, 19% 53%, 0 20%);
+    transform: rotate(90deg);
+  }
+  .cards-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4vw;
+    gap: 3rem;
+    margin-top: -6vw;
+    margin-left: 5vw;
+  }
+  .cards-container .work-card{
+    width: 50%;
+    height: 30vh;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .work-card h2{
+    font-size: 3vw;
+    color: black;
+    font-weight: 500;
+  }
+  .work-card img{
+    height: 35%;
+    width: 80%;
+    object-fit: cover;
+    margin: 1vw 8vw;
+  }
+  .number h3{
+    color: black;
+    font-size: 2.5vw;
+    text-align: left;
+    margin-left: 2vw;
+  }
+  .number h1{
+    margin-bottom: 2vw;
+    font-size: 4vw;
+  }
+  #step{
+    color: rgb(41, 94, 163);
+    font-weight: 700;
+  }
+  .company{
+    top: 552vw;
+    width: 100%;
+  }
+  .company .company-container{
+    margin-top: 5vw;
+  }
+  .company-container h1{
+    text-align: center;
+    font-size: 5vw;
+  }
+  .logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    padding: 2vw;
+    overflow-x: hidden;
+  }
+  .logos .lugo{
+    padding: 5vw 10vw;
+    width: 20%;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 3vw;
+    overflow-x: hidden;
+  }
+  .certificate{
+    position: absolute;
+    top: 587vw;
+  }
+  .certificate-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-top: 3vw;
+    margin-bottom: 10vw;
+    padding: 0 3vw;
+  }
+  .certificate h1{
+    text-align: center;
+    font-size: 5vw;
+  }
+  .certificate-container .cer-one{
+    width: 80%;
+    height: 40vh;
+    margin-top: 3vw;
+  }
+  .cer-one h2{
+    text-align: center;
+    font-size: 3.5vw;
+  }
+  .cer-one img{
+    height: 70%;
+    width: 70%;
+    object-fit: cover;
+    margin-top: -3vw;
+  }
+  .cer-btn {
+    display: flex;
+    gap: 10px;
+  }
+  .cer-one .cer-btn button{
+    font-size: 3vw;
+    width: 35vw;
+    padding: 2vw 0;
+  }
+  .certificate-container .cer-two{
+    width: 80%;
+    height: 40vh;
+  }
+  .cer-two h2{
+    text-align: center;
+    font-size: 3.5vw;
+    margin-top: 0.2vw;
+  }
+  .cer-two p{
+    text-align: left;
+    padding: 0 2vw;
+    font-size: 3vw;
+    margin-top: 2vw;
+  }
+  .bundle{
+    position: absolute;
+    top: 820vw;
+    background-color: #fff;
+    width: 100%;
+    padding: 5vw;
+  }
+  .bundle .top-bundle{
+    background: linear-gradient(180deg, #B73BBE 0%, #992E9D 93.51%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7vw 4vw;
+    border-radius: 48px;
+    margin-bottom: 10vw;
+  }
+  .top-bundle .bundxle-left{
+    text-align: left;
+  }
+  .bundle-left h1{
+    font-size: 9vw;
+    font-weight: 800;
+    color: #1B1B1D;
+  }
+  .bundle-left h1 span{
+    text-decoration: line-through;
+    font-size: 8vw;
+  }
+  .bundle-left p{
+    font-size: 4vw;
+    margin-top: 1vw;
+  }
+  .bundle-left button{
+    background-color: #1B1B1D;
+    padding: 3vw 10vw;
+    margin-left: 10vw;
+    margin-top: 3vw;
+    font-size: 24px;
+    color: white;
+    gap: 2rem;
+    display: flex;
+  }
+  .bundle-left i{
+    font-size: 24px;
+    color: white;
+  }
+  .bundle-right{
+    text-align: left;
+    margin-top: 4vw;
+    gap: 3rem;
+  }
+  .bundle-right h2{
+    font-size: 5vw;
+    font-weight: 500;
+  }
+  .bundle-right h3{
+    font-size: 5vw;
+    color: black;
+  }
+  .bottom-bundle{
+    display: none;
+  }
+}
+@media screen and (max-width:390px) {
+  .hero-section{
+    padding-top: 8vw;
+    top: 8vw;
+    width: 100%;
+  }
+  .hero-section .hero-iit{
+    gap: 1rem;
+    padding: 3vw;
+    width: 70%;
+    margin-top: 13vw;
+    margin-left: 8vw;
+  }
+  .hero-iit h3{
+    font-size: 2.5vw;
+  }
+  .hero-iit i{
+    font-size: 3vw;
+  }
+  .hero-section .hero-desc{
+    margin-top: 3vw;
+    width: 100%;
+    margin-left: 7vw;
+  }
+  .hero-desc h1{
+    font-size: 6vw;
+  }
+  .hero-desc p{
+    font-size: 2.5vw;
+  }
+  .hero-section .hero-point{
+    margin-top: 2.5vw;
+    gap: 0.8rem;
+    width: 100%;
+    margin-left: 3vw;
+  }
+  .hero-point button{
+    gap: 1rem;
+    padding: 2vw;
+  }
+  .hero-point button h4{
+    font-size: 1.7vw;
+  }
+  .course{
+    position: absolute;
+    top: 110vw;
+    width: 100%;
+  }
+  .sale{
+    top: 260vw;
+  }
+  .work-section{
+    top: 329vw;
+  }
+  .company{
+    top: 565vw;
+    width: 100%;
+  }
+  .certificate{
+    position: absolute;
+    top: 600vw;
+  }
+}
